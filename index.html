@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#70cddd">
+  <meta name="description" content="VINAYAK ENTERPRISES, Huvinahadagali.">
+  <title>VINAYAK ENTERPRISES</title>
+  <link rel="icon" type="image/png" href="ve-logo.png">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    html, body { min-height:100%; }
+    body { min-height:100vh; min-height:100svh; margin:0; overflow-x:hidden; background:#70cddd url("peace-panda-bg.png") center center / contain fixed no-repeat; }
+    main { position:relative; min-height:100vh; min-height:100svh; }
+    .brand-top { position:fixed; z-index:5; top:max(12px,env(safe-area-inset-top)); left:max(12px,env(safe-area-inset-left)); display:flex; align-items:center; gap:8px; color:#fff; font:800 13px Arial,Helvetica,sans-serif; letter-spacing:.04em; text-shadow:0 2px 8px rgba(0,0,0,.75); }
+    .brand-top img { display:block; width:48px; height:48px; object-fit:cover; border:2px solid #fff; border-radius:7px; background:#fff; }
+    .screen-shop-link { position:fixed; z-index:2; inset:0; display:block; }
+    .screen-shop-link:focus-visible { outline:4px solid #fff; outline-offset:-8px; }
+    .store-link { position:absolute; z-index:3; top:15vh; left:clamp(18px,6vw,76px); display:flex; flex-direction:column; width:clamp(180px,22vw,280px); aspect-ratio:1; padding:7px; overflow:hidden; border:3px solid #fff; border-radius:5px; background:#fff; box-shadow:0 8px 24px rgba(0,0,0,.32); }
+    .store-link.right { top:min(55vh,calc(100svh - clamp(180px,22vw,280px) - 100px)); left:auto; right:clamp(18px,6vw,76px); }
+    .store-link img { display:block; flex:1; min-height:0; width:100%; object-fit:contain; }
+    .call-hint { display:block; flex:none; padding:6px 2px 2px; border-top:2px solid #fff; color:#105236; font:800 clamp(10px,1.1vw,13px)/1.25 Arial,Helvetica,sans-serif; text-align:center; }
+    .shop-button { position:fixed; z-index:5; left:clamp(18px,6vw,76px); bottom:max(18px,env(safe-area-inset-bottom)); display:inline-flex; min-height:48px; align-items:center; justify-content:center; padding:12px 24px; border:2px solid rgba(255,255,255,.85); border-radius:8px; color:#fff; background:#105236; box-shadow:0 5px 18px rgba(0,0,0,.28); font:800 15px Arial,Helvetica,sans-serif; letter-spacing:.04em; text-decoration:none; }
+    .shop-button:hover { background:#176b45; transform:translateY(-2px); }
+    @media (max-width:600px) {
+      .brand-top { top:max(10px,env(safe-area-inset-top)); left:max(10px,env(safe-area-inset-left)); gap:7px; font-size:11px; }
+      .brand-top img { width:38px; height:38px; }
+      .store-link { top:16vh; left:4vw; right:auto; width:min(42vw,190px); padding:5px; border-width:2px; }
+      .call-hint { padding-top:5px; font-size:clamp(9px,2.7vw,11px); }
+      .store-link.right { left:auto; right:4vw; }
+      .shop-button { left:50%; bottom:max(16px,env(safe-area-inset-bottom)); min-height:48px; padding:12px 22px; font-size:14px; transform:translateX(-50%); white-space:nowrap; }
+      .shop-button:hover { transform:translate(-50%,-2px); }
+    }
+    @media (max-width:360px) {
+      .store-link { top:17vh; width:41vw; padding:4px; }
+      .brand-top { font-size:10px; }
+      .brand-top img { width:34px; height:34px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="screen-shop-link" href="shop.html" aria-label="Tap anywhere to open the shop"></a>
+  <a class="brand-top" href="shop.html"><img src="ve-logo.png" alt=""><span>VINAYAK ENTERPRISES</span></a>
+  <main aria-label="Home">
+    <a class="store-link" href="tel:+919945898198" aria-label="Call 99458 98198"><img src="store-front.png" alt="VINAYAK ENTERPRISES shop front"><span class="call-hint">😊 Touch me get number bro😎</span></a>
+    <a class="store-link right" href="tel:+919945898198" aria-label="Call 99458 98198"><img src="store-front.png" alt="VINAYAK ENTERPRISES shop front"><span class="call-hint">😊 Touch me get number bro😎</span></a>
+  </main>
+  <a class="shop-button" href="shop.html">Shop Now</a>
+</body>
+</html>

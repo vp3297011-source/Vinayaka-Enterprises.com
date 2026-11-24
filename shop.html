@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#bfff55">
+  <meta name="description" content="Shop electrical, solar and agricultural products from VINAYAK ENTERPRISES, Huvinahadagali.">
+  <title>Shop | VINAYAK ENTERPRISES</title>
+  <link rel="icon" type="image/png" href="ve-logo.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="index.html"><img src="ve-logo.png" alt=""><span>VINAYAK ENTERPRISES<small data-en="Electrical · Solar · Farm supplies" data-kn="ಎಲೆಕ್ಟ್ರಿಕಲ್ · ಸೋಲಾರ್ · ಕೃಷಿ ಸಾಮಗ್ರಿಗಳು">Electrical · Solar · Farm supplies</small></span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" data-en="Home" data-kn="ಮುಖಪುಟ">Home</a>
+        <a href="shop.html" data-en="Shop" data-kn="ಅಂಗಡಿ">Shop</a>
+        <a href="#contact" data-en="Contact" data-kn="ಸಂಪರ್ಕಿಸಿ">Contact</a>
+      </nav>
+      <button class="language" id="language" type="button">ಕನ್ನಡ</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1 data-en="Shop products" data-kn="ಉತ್ಪನ್ನಗಳನ್ನು ನೋಡಿ">Shop products</h1>
+        <p data-en="Electrical, solar and farm supplies available at VINAYAK ENTERPRISES." data-kn="ವಿನಾಯಕ ಎಂಟರ್‌ಪ್ರೈಸಸ್‌ನಲ್ಲಿ ಎಲೆಕ್ಟ್ರಿಕಲ್, ಸೋಲಾರ್ ಮತ್ತು ಕೃಷಿ ಸಾಮಗ್ರಿಗಳು ಲಭ್ಯವಿವೆ.">Electrical, solar and farm supplies available at VINAYAK ENTERPRISES.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="wrap">
+        <h2 data-en="Contact us" data-kn="ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ">Contact us</h2>
+        <div class="contact-box">
+          <p><strong data-en="Address:" data-kn="ವಿಳಾಸ:">Address:</strong> <span data-en="Opposite Ambedkar Circle, Huvinahadagali – 583219, Vijayanagara district" data-kn="ಅಂಬೇಡ್ಕರ್ ಸರ್ಕಲ್ ಎದುರು, ಹುವಿನಹಡಗಲಿ – 583219, ವಿಜಯನಗರ ಜಿಲ್ಲೆ">Opposite Ambedkar Circle, Huvinahadagali – 583219, Vijayanagara district</span></p>
+          <p><strong data-en="Phone:" data-kn="ದೂರವಾಣಿ:">Phone:</strong> <a href="tel:+919945898198">99458 98198</a> · <a href="tel:+919019779983">90197 79983</a> · <a href="tel:+916362425992">63624 25992</a></p>
+          <div class="contact-actions">
+            <a class="button" href="tel:+919945898198" data-en="Call" data-kn="ಕರೆ ಮಾಡಿ">Call</a>
+            <a class="button" href="https://wa.me/919945898198" target="_blank" rel="noopener" data-en="WhatsApp us" data-kn="ವಾಟ್ಸಾಪ್ ಮಾಡಿ">WhatsApp us</a>
+            <a class="button green" href="https://share.google/c9YSs4cEQ6GMCRQGa" target="_blank" rel="noopener" data-en="Open in Maps" data-kn="ನಕ್ಷೆಯಲ್ಲಿ ತೆರೆಯಿರಿ">Open in Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> VINAYAK ENTERPRISES · Huvinahadagali</div></footer>
+  <script src="site.js"></script>
+  <script>
+    const products = [
+      {en:"Wires & cables",kn:"ತಂತಿಗಳು ಮತ್ತು ಕೇಬಲ್‌ಗಳು",price:"₹700",image:"wires.png"},
+      {en:"Switches & sockets",kn:"ಸ್ವಿಚ್‌ಗಳು ಮತ್ತು ಸಾಕೆಟ್‌ಗಳು",price:"₹30",image:"switches-sockets.png"},
+      {en:"Lights & bulbs",kn:"ಲೈಟ್‌ಗಳು ಮತ್ತು ಬಲ್ಬ್‌ಗಳು",price:"₹150",image:"bulb.png"},
+      {en:"Fans",kn:"ಫ್ಯಾನ್‌ಗಳು",price:"₹1,200",image:"fan.png"},
+      {en:"Motors",kn:"ಮೋಟರ್‌ಗಳು",price:"₹3,000",image:"motor.png"},
+      {en:"Batteries",kn:"ಬ್ಯಾಟರಿಗಳು",price:"₹1,300",image:"battery.png"},
+      {en:"Solar panels",kn:"ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್‌ಗಳು",price:"₹1,500",image:"solar-panel.png"},
+      {en:"Sprayer pumps",kn:"ಸ್ಪ್ರೇಯರ್ ಪಂಪ್‌ಗಳು",price:"₹3,500",image:"sprayer-pump.png"},
+      {en:"Tree cutting machine",kn:"ಮರ ಕತ್ತರಿಸುವ ಯಂತ್ರ",price:"₹7,000",image:"tree-cutter.png"},
+      {en:"Sprayer spare parts",kn:"ಸ್ಪ್ರೇಯರ್ ಬಿಡಿಭಾಗಗಳು",price:"₹100",image:"sprayer-parts.png"}
+    ];
+    const grid = document.getElementById("products");
+    function renderProducts() {
+      const language = window.siteLanguage || "en";
+      grid.innerHTML = products.map(product => {
+        const name = product[language];
+        return `<a class="product" href="tel:+919945898198" aria-label="Call VINAYAK ENTERPRISES about ${name}"><img class="product-image" src="${product.image}" alt="${name}" loading="lazy"><h3>${name}</h3><div class="price">${language === "kn" ? "ಬೆಲೆ" : "Price"}: ${product.price}</div></a>`;
+      }).join("");
+    }
+    renderProducts();
+    window.addEventListener("site-language-change", renderProducts);
+  </script>
+</body>
+</html>
